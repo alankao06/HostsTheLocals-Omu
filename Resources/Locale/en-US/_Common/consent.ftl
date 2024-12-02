@@ -20,9 +20,12 @@ reagent-effect-condition-guidebook-consent-condition = the target has consented 
 consent-examine-verb = Consent Info
 consent-examine-not-set = This player has no consent preferences set. Ask for consent first before engaging in any erotic roleplay.
 
-# To localize consent toggle names and descriptions into other languages,
-# make a new .ftl file like this:
-#consent-Example1 = Example consent toggle
-#    .desc = This is just here as an example for how to add consent toggles.
-#consent-Example2 = Another example toggle
-#    .desc = A
+# Consent toggles
+consent-Vore-name = Vore
+consent-Vore-desc = Allow yourself to be devoured by anyone... or anything.
+
+consent-Digestion-name = Digestion
+consent-Digestion-desc = Allow yourself to be digested. WARNING: BEING DIGESTED WILL ROUND-REMOVE YOU.
+
+consent-Hypno-name = Hypnosis
+consent-Hypno-desc = Allow yourself to be hypnotized.

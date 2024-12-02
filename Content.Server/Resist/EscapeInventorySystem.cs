@@ -98,6 +98,8 @@ using Content.Shared.Movement.Events;
 using Content.Shared.Resist;
 using Robust.Shared.Containers;
 using Robust.Shared.Prototypes;
+using Content.Server.FloofStation;
+using Content.Shared.FloofStation; // Floofstation
 
 namespace Content.Server.Resist;
 
@@ -108,7 +110,10 @@ public sealed class EscapeInventorySystem : EntitySystem
     [Dependency] private readonly SharedContainerSystem _containerSystem = default!;
     [Dependency] private readonly ActionBlockerSystem _actionBlockerSystem = default!;
     [Dependency] private readonly SharedHandsSystem _handsSystem = default!;
-    [Dependency] private readonly SharedActionsSystem _actions = default!; // DeltaV
+    [Dependency] private readonly CarryingSystem _carryingSystem = default!; // Carrying system from Nyanotrasen.
+    [Dependency] private readonly SharedActionsSystem _actions = default!;
+    [Dependency] private readonly ContestsSystem _contests = default!;
+    [Dependency] private readonly VoreSystem _vore = default!;
 
     /// <summary>
     /// You can't escape the hands of an entity this many times more massive than you.
@@ -138,7 +143,8 @@ public sealed class EscapeInventorySystem : EntitySystem
         if (!args.HasDirectionalMovement)
             return;
 
-        if (!_containerSystem.TryGetContainingContainer((uid, null, null), out var container) || !_actionBlockerSystem.CanInteract(uid, container.Owner))
+        if (!_containerSystem.TryGetContainingContainer(uid, out var container)
+            || !_actionBlockerSystem.CanInteract(uid, container.Owner))
             return;
 
         // Make sure there's nothing stopped the removal (like being glued)
@@ -152,6 +158,13 @@ public sealed class EscapeInventorySystem : EntitySystem
         if (_handsSystem.IsHolding(container.Owner, uid, out _))
         {
             AttemptEscape(uid, container.Owner, component);
+            return;
+        }
+
+        // Vore - Floofstation
+        if (HasComp<VoredComponent>(uid))
+        {
+            AttemptEscape(uid, container.Owner, component, 5f);
             return;
         }
 
@@ -194,6 +207,12 @@ public sealed class EscapeInventorySystem : EntitySystem
 
         if (args.Handled || args.Cancelled)
             return;
+
+        if (TryComp<BeingCarriedComponent>(uid, out var carried)) // Start of carrying system of nyanotrasen.
+        {
+            _carryingSystem.DropCarried(carried.Carrier, uid);
+            return;
+        } // End of carrying system of nyanotrasen.
 
         _containerSystem.AttachParentToContainerOrGrid((uid, Transform(uid)));
         args.Handled = true;
