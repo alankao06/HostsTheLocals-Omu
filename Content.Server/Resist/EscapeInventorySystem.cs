@@ -144,8 +144,17 @@ public sealed class EscapeInventorySystem : EntitySystem
         if (!args.HasDirectionalMovement)
             return;
 
-        if (!_containerSystem.TryGetContainingContainer(uid, out var container)
-            || !_actionBlockerSystem.CanInteract(uid, container.Owner))
+        if (!_containerSystem.TryGetContainingContainer(uid, out var container))
+            return;
+
+        // Vore - Floofstation
+        if (HasComp<VoredComponent>(uid))
+        {
+            AttemptEscape(uid, container.Owner, component, 5f);
+            return;
+        }
+
+        if (!_actionBlockerSystem.CanInteract(uid, container.Owner))
             return;
 
         // Make sure there's nothing stopped the removal (like being glued)
@@ -159,13 +168,6 @@ public sealed class EscapeInventorySystem : EntitySystem
         if (_handsSystem.IsHolding(container.Owner, uid, out _))
         {
             AttemptEscape(uid, container.Owner, component);
-            return;
-        }
-
-        // Vore - Floofstation
-        if (HasComp<VoredComponent>(uid))
-        {
-            AttemptEscape(uid, container.Owner, component, 5f);
             return;
         }
 
@@ -185,6 +187,7 @@ public sealed class EscapeInventorySystem : EntitySystem
             NeedHand = false,
             CancelDuplicate = false, // Goobstation
             BreakOnMove = false, // Goobstation; otherwise mousing over or doing anything will just stop it
+            RequireCanInteract = false
         };
 
         if (!_doAfterSystem.TryStartDoAfter(doAfterEventArgs, out component.DoAfter))
