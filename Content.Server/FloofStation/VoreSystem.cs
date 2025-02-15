@@ -39,7 +39,6 @@ using Content.Shared._EinsteinEngines.Contests;
 using Content.Shared.Interaction.Events;
 using Content.Shared.ActionBlocker;
 using Content.Shared.Hands.EntitySystems;
-using Robust.Shared.Player;
 
 namespace Content.Server.FloofStation;
 
@@ -98,8 +97,11 @@ public sealed class VoreSystem : EntitySystem
         if (!args.CanInteract
             || !args.CanAccess
             || args.User == args.Target
-            || !HasComp<VoreComponent>(args.Target)
-            || !_consent.HasConsent(args.User, "VorePred")
+            || !TryComp<VoreComponent>(args.User, out var voreuser)
+            || !voreuser.CanVore
+            || !TryComp<VoreComponent>(args.Target, out var voretarget)
+            || !voretarget.CanBeVored
+            || !_consent.HasConsent(args.User, "Vore")
             || !_consent.HasConsent(args.Target, "Vore"))
             return;
 
@@ -119,14 +121,17 @@ public sealed class VoreSystem : EntitySystem
         if (!args.CanInteract
             || !args.CanAccess
             || args.User == args.Target
-            || !TryComp<VoreComponent>(args.Target, out var component)
-            || !_consent.HasConsent(args.Target, "VorePred")
+            || !TryComp<VoreComponent>(args.User, out var voreuser)
+            || !voreuser.CanBeVored
+            || !TryComp<VoreComponent>(args.Target, out var voretarget)
+            || !voretarget.CanVore
+            || !_consent.HasConsent(args.Target, "Vore")
             || !_consent.HasConsent(args.User, "Vore"))
             return;
 
         InnateVerb verbInsert = new()
         {
-            Act = () => TryDevour(args.Target, args.User, component),
+            Act = () => TryDevour(args.Target, args.User, voretarget),
             Text = Loc.GetString("action-name-insert-self"),
             Category = VerbCategory.Interaction,
             Icon = new SpriteSpecifier.Rsi(new ResPath("Interface/Actions/devour.rsi"), "icon"),
@@ -412,6 +417,9 @@ public sealed class VoreSystem : EntitySystem
 
     private void OnExamine(EntityUid uid, ExaminedEvent args)
     {
+        if (!_consent.HasConsent(args.Examiner, "Vore"))
+            return;
+
         if (!_containerSystem.TryGetContainer(uid, "stomach", out var stomach)
             || stomach.ContainedEntities.Count < 1)
             return;
