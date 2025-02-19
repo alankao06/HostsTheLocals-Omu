@@ -219,7 +219,6 @@
       deactivateSound: null
     - type: VentCrawler # Goobstation
     - type: Fauna # Lavaland Change
-    - type: Vore # Floofstation - Vore
 
 - type: entity
   parent: BaseMobCarp

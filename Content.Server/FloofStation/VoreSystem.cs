@@ -100,14 +100,15 @@ public sealed class VoreSystem : EntitySystem
             || !TryComp<VoreComponent>(args.User, out var voreuser)
             || !voreuser.CanVore
             || !TryComp<VoreComponent>(args.Target, out var voretarget)
+            || !TryComp<ConsentComponent>(args.User, out var voreconsent)
             || !voretarget.CanBeVored
-            || !_consent.HasConsent(args.User, "Vore")
+            || !_consent.HasConsent(args.User, "VorePred")
             || !_consent.HasConsent(args.Target, "Vore"))
             return;
 
         InnateVerb verbDevour = new()
         {
-            Act = () => TryDevour(args.User, args.Target, component),
+            Act = () => TryDevour(args.User, args.Target, component, false),
             Text = Loc.GetString("vore-devour"),
             Category = VerbCategory.Interaction,
             Icon = new SpriteSpecifier.Rsi(new ResPath("Interface/Actions/devour.rsi"), "icon-on"),
@@ -124,14 +125,15 @@ public sealed class VoreSystem : EntitySystem
             || !TryComp<VoreComponent>(args.User, out var voreuser)
             || !voreuser.CanBeVored
             || !TryComp<VoreComponent>(args.Target, out var voretarget)
+            || !TryComp<ConsentComponent>(args.User, out var voreconsent)
             || !voretarget.CanVore
-            || !_consent.HasConsent(args.Target, "Vore")
+            || !_consent.HasConsent(args.Target, "VorePred")
             || !_consent.HasConsent(args.User, "Vore"))
             return;
 
         InnateVerb verbInsert = new()
         {
-            Act = () => TryDevour(args.Target, args.User, voretarget),
+            Act = () => TryDevour(args.Target, args.User, voretarget, true),
             Text = Loc.GetString("action-name-insert-self"),
             Category = VerbCategory.Interaction,
             Icon = new SpriteSpecifier.Rsi(new ResPath("Interface/Actions/devour.rsi"), "icon"),
@@ -189,22 +191,30 @@ public sealed class VoreSystem : EntitySystem
         }
     }
 
-    public void TryDevour(EntityUid uid, EntityUid target, VoreComponent? component = null)
+    public void TryDevour(EntityUid uid, EntityUid target, VoreComponent? component = null, bool isInsertion = false)
     {
         if (!Resolve(uid, ref component))
             return;
 
-        _popups.PopupEntity(Loc.GetString("vore-attempt-devour", ("entity", uid), ("prey", target)), uid, target, PopupType.MediumCaution);
-        _popups.PopupEntity(Loc.GetString("vore-attempt-devour", ("entity", uid), ("prey", target)), target, uid, PopupType.MediumCaution);
+        if (TryComp<VoredComponent>(uid, out var voreuser))
+            return;
+
+        if (isInsertion) {
+            _popups.PopupEntity(Loc.GetString("vore-attempt-insert", ("entity", uid), ("prey", target)), uid, target, PopupType.MediumCaution);
+            _popups.PopupEntity(Loc.GetString("vore-attempt-insert", ("entity", uid), ("prey", target)), target, uid, PopupType.MediumCaution);
+        } else {
+            _popups.PopupEntity(Loc.GetString("vore-attempt-devour", ("entity", uid), ("prey", target)), uid, target, PopupType.MediumCaution);
+            _popups.PopupEntity(Loc.GetString("vore-attempt-devour", ("entity", uid), ("prey", target)), target, uid, PopupType.MediumCaution);
+        }
 
         if (!TryComp<PhysicsComponent>(uid, out var predPhysics)
             || !TryComp<PhysicsComponent>(target, out var preyPhysics))
             return;
 
         var length = TimeSpan.FromSeconds(component.Delay
-                        * _contests.MassContest(preyPhysics, predPhysics, false, 4f)
-                        * _contests.StaminaContest(uid, target)
-                        * (_standingState.IsDown(target) ? 0.5f : 1));
+                        * _contests.MassContest(preyPhysics, predPhysics, false, 4f) // Big things are harder to fit in small things
+                        * _contests.StaminaContest(isInsertion?target:uid, isInsertion?uid:target) // The person doing the action having higher stamina makes it easier
+                        * (_standingState.IsDown(isInsertion?uid:target) ? 0.5f : 1)); // If the person having the action done to them is on the ground it's easier
 
         _doAfterSystem.TryStartDoAfter(new DoAfterArgs(EntityManager, uid, length, new VoreDoAfterEvent(), uid, target: target)
         {
@@ -417,7 +427,7 @@ public sealed class VoreSystem : EntitySystem
 
     private void OnExamine(EntityUid uid, ExaminedEvent args)
     {
-        if (!_consent.HasConsent(args.Examiner, "Vore"))
+        if (!(_consent.HasConsent(args.Examiner, "Vore") || _consent.HasConsent(args.Examiner, "VorePred")))
             return;
 
         if (!_containerSystem.TryGetContainer(uid, "stomach", out var stomach)
