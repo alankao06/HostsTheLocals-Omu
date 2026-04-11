@@ -1031,6 +1031,9 @@
   id: Ice
 
 - type: Tag
+  id: IceCream
+
+- type: Tag
   id: Igniter
 
 - type: Tag
@@ -1471,7 +1474,7 @@
   id: SalvageExperiment
 
 # Omu Station
-- type: Tag 
+- type: Tag
   id: SalvagePinpointer
 
 - type: Tag
@@ -1745,6 +1748,9 @@
   id: WeaponShotgunKammerer
 
 - type: Tag
+  id: WeldbotFixableStructure
+
+- type: Tag
   id: WeldingMask
 
 - type: Tag
@@ -1813,3 +1819,6 @@
 - type: Tag
   id: XenoborgModuleStealth
 # ALPHABETICAL
+#im lazy
+- type: Tag
+  id: Whip

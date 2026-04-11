@@ -238,3 +238,59 @@
         bluespaceEffectOnTeleportSource: true
         destroyAfterUses: 2
         destroyType: DeleteComponent
+
+# Metal Closets
+- type: entity
+  parent: ClosetBase
+  id: ClosetBase2
+  abstract: true
+  components:
+  - type: Sprite
+    sprite: Structures/Storage/Closets/closet.rsi
+    layers:
+    - state: closet
+      map: ["enum.StorageVisualLayers.Base"]
+    - state: closet_door
+      map: ["enum.StorageVisualLayers.Door"]
+  - type: EntityStorageVisuals
+    stateBaseClosed: closet
+    stateDoorOpen: closet_open
+    stateDoorClosed: closet_door
+  - type: Transform
+    anchored: true
+    noRot: true
+  - type: Physics
+    bodyType: Static
+  - type: Anchorable # Makes the anchoring near impossible due to high time requirement
+    delay: 3600
+
+- type: entity
+  parent: ClosetBase2
+  id: ClosetBaseW
+  name: closet
+  description: A basic closet for storing things.
+  components:
+  - type: Weldable
+  - type: Sprite
+    noRot: true
+    netsync: false
+    sprite: Structures/Storage/Closets/closet.rsi
+    layers:
+    - state: closet
+      map: ["enum.StorageVisualLayers.Base"]
+    - state: closet_door
+      map: ["enum.StorageVisualLayers.Door"]
+    - state: welded
+      visible: false
+      map: ["enum.WeldableLayers.BaseWelded"]
+  - type: EntityStorageVisuals
+    stateBaseClosed: closet
+    stateDoorOpen: closet_open
+    stateDoorClosed: closet_door
+
+- type: entity
+  id: ClosetGrey2
+  parent: ClosetBaseW
+  components:
+  - type: Sprite
+    sprite: Structures/Storage/Closets/closetgrey2.rsi
