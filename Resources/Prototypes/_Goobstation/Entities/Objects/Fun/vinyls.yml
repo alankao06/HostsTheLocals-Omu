@@ -901,3 +901,617 @@
   components:
   - type: Sprite
     state: plainwhite-vinyl-sleeve
+
+#Personal fork addons - NOTE THESE SONGS HAVE COPYRIGHT. THIS FORK IS INTENDED TO BE JUST FOR FRIENDS. DO NOT COPY THIS PR!
+- type: entity
+  name: Couch Dog - Makeout Moshpit
+  id: VinylDiskMMMP
+  parent: BaseVinylDisk
+  components:
+  - type: Sprite
+    state: cyan-vinyl-disk
+  - type: Vinyl
+    song:
+      path: /Audio/_Goobstation/RadioStation/music/personaladdons/makeoutmoshpit.ogg
+
+- type: entity
+  name: La La Land - Another Day of Sun
+  id: VinylDiskADOS
+  parent: BaseVinylDisk
+  components:
+  - type: Sprite
+    state: cyan-vinyl-disk
+  - type: Vinyl
+    song:
+      path: /Audio/_Goobstation/RadioStation/music/personaladdons/anotherdayofsun.ogg
+
+- type: entity
+  name: Glass Beach - Bedroom Community
+  id: VinylDiskBedroom
+  parent: BaseVinylDisk
+  components:
+  - type: Sprite
+    state: cyan-vinyl-disk
+  - type: Vinyl
+    song:
+      path: /Audio/_Goobstation/RadioStation/music/personaladdons/bedroomcommunity.ogg
+
+- type: entity
+  name: Laufey - Bewitched
+  id: VinylDiskBewitched
+  parent: BaseVinylDisk
+  components:
+  - type: Sprite
+    state: cyan-vinyl-disk
+  - type: Vinyl
+    song:
+      path: /Audio/_Goobstation/RadioStation/music/personaladdons/bewitched.ogg
+
+- type: entity
+  name: Laufey - Bored
+  id: VinylDiskBored
+  parent: BaseVinylDisk
+  components:
+  - type: Sprite
+    state: cyan-vinyl-disk
+  - type: Vinyl
+    song:
+      path: /Audio/_Goobstation/RadioStation/music/personaladdons/bored.ogg
+
+- type: entity
+  name: Laufey - California and Me
+  id: VinylDiskCalifornia
+  parent: BaseVinylDisk
+  components:
+  - type: Sprite
+    state: cyan-vinyl-disk
+  - type: Vinyl
+    song:
+      path: /Audio/_Goobstation/RadioStation/music/personaladdons/california.ogg
+
+- type: entity
+  name: Glass Beach - classic j dies and goes to hell part 1
+  id: VinylDiskClassicJ
+  parent: BaseVinylDisk
+  components:
+  - type: Sprite
+    state: cyan-vinyl-disk
+  - type: Vinyl
+    song:
+      path: /Audio/_Goobstation/RadioStation/music/personaladdons/classicjdied.ogg
+
+- type: entity
+  name: Pitcher56 - Dewey Roses
+  id: VinylDiskDeweyRoses
+  parent: BaseVinylDisk
+  components:
+  - type: Sprite
+    state: cyan-vinyl-disk
+  - type: Vinyl
+    song:
+      path: /Audio/_Goobstation/RadioStation/music/personaladdons/deweyroses.ogg
+
+- type: entity
+  name: Laufey - Dreamer
+  id: VinylDiskDreamer
+  parent: BaseVinylDisk
+  components:
+  - type: Sprite
+    state: cyan-vinyl-disk
+  - type: Vinyl
+    song:
+      path: /Audio/_Goobstation/RadioStation/music/personaladdons/dreamer.ogg
+
+- type: entity
+  name: AJR - The Dumb Song
+  id: VinylDiskDumb
+  parent: BaseVinylDisk
+  components:
+  - type: Sprite
+    state: cyan-vinyl-disk
+  - type: Vinyl
+    song:
+      path: /Audio/_Goobstation/RadioStation/music/personaladdons/dumbsong.ogg
+
+- type: entity
+  name: Laufey - From the Start
+  id: VinylDiskFTS
+  parent: BaseVinylDisk
+  components:
+  - type: Sprite
+    state: cyan-vinyl-disk
+  - type: Vinyl
+    song:
+      path: /Audio/_Goobstation/RadioStation/music/personaladdons/fromthestart.ogg
+
+- type: entity
+  name: Laufey - Goddess
+  id: VinylDiskGoddess
+  parent: BaseVinylDisk
+  components:
+  - type: Sprite
+    state: cyan-vinyl-disk
+  - type: Vinyl
+    song:
+      path: /Audio/_Goobstation/RadioStation/music/personaladdons/goddess.ogg
+
+- type: entity
+  name: Laufey - It Could Happen to You
+  id: VinylDiskICHTY
+  parent: BaseVinylDisk
+  components:
+  - type: Sprite
+    state: cyan-vinyl-disk
+  - type: Vinyl
+    song:
+      path: /Audio/_Goobstation/RadioStation/music/personaladdons/happento.ogg
+
+- type: entity
+  name: Laufey - Haunted
+  id: VinylDiskHaunted
+  parent: BaseVinylDisk
+  components:
+  - type: Sprite
+    state: cyan-vinyl-disk
+  - type: Vinyl
+    song:
+      path: /Audio/_Goobstation/RadioStation/music/personaladdons/haunted.ogg
+
+- type: entity
+  name: Laufey - Letter to my 13 Year Old Self
+  id: VinylDiskLTM13YOS
+  parent: BaseVinylDisk
+  components:
+  - type: Sprite
+    state: cyan-vinyl-disk
+  - type: Vinyl
+    song:
+      path: /Audio/_Goobstation/RadioStation/music/personaladdons/letterto13.ogg
+
+- type: entity
+  name: Pitcher56 - Love Letter
+  id: VinylDiskLoveLetter
+  parent: BaseVinylDisk
+  components:
+  - type: Sprite
+    state: cyan-vinyl-disk
+  - type: Vinyl
+    song:
+      path: /Audio/_Goobstation/RadioStation/music/personaladdons/loveletter.ogg
+
+- type: entity
+  name: La La Land - A Lovely Night
+  id: VinylDiskLovelyNight
+  parent: BaseVinylDisk
+  components:
+  - type: Sprite
+    state: cyan-vinyl-disk
+  - type: Vinyl
+    song:
+      path: /Audio/_Goobstation/RadioStation/music/personaladdons/lovelynight.ogg
+
+- type: entity
+  name: Laufey - Lovergirl
+  id: VinylDiskLovergirl
+  parent: BaseVinylDisk
+  components:
+  - type: Sprite
+    state: cyan-vinyl-disk
+  - type: Vinyl
+    song:
+      path: /Audio/_Goobstation/RadioStation/music/personaladdons/lovergirl.ogg
+
+- type: entity
+  name: Laufey - Lovesick
+  id: VinylDiskLovesick
+  parent: BaseVinylDisk
+  components:
+  - type: Sprite
+    state: cyan-vinyl-disk
+  - type: Vinyl
+    song:
+      path: /Audio/_Goobstation/RadioStation/music/personaladdons/lovesick.ogg
+
+- type: entity
+  name: Couch Dog - Mary's Title Track
+  id: VinylDiskMarys
+  parent: BaseVinylDisk
+  components:
+  - type: Sprite
+    state: cyan-vinyl-disk
+  - type: Vinyl
+    song:
+      path: /Audio/_Goobstation/RadioStation/music/personaladdons/marystitle.ogg
+
+- type: entity
+  name: Laufey - Misty
+  id: VinylDiskMisty
+  parent: BaseVinylDisk
+  components:
+  - type: Sprite
+    state: cyan-vinyl-disk
+  - type: Vinyl
+    song:
+      path: /Audio/_Goobstation/RadioStation/music/personaladdons/misty.ogg
+
+- type: entity
+  name: Laufey - Must Be Love
+  id: VinylDiskMBL
+  parent: BaseVinylDisk
+  components:
+  - type: Sprite
+    state: cyan-vinyl-disk
+  - type: Vinyl
+    song:
+      path: /Audio/_Goobstation/RadioStation/music/personaladdons/mustbelove.ogg
+
+- type: entity
+  name: Laufey - Nocturne (interlude)
+  id: VinylDiskNocturne
+  parent: BaseVinylDisk
+  components:
+  - type: Sprite
+    state: cyan-vinyl-disk
+  - type: Vinyl
+    song:
+      path: /Audio/_Goobstation/RadioStation/music/personaladdons/nocturne.ogg
+
+- type: entity
+  name: La La Land - Planetarium
+  id: VinylDiskPlanetarium
+  parent: BaseVinylDisk
+  components:
+  - type: Sprite
+    state: cyan-vinyl-disk
+  - type: Vinyl
+    song:
+      path: /Audio/_Goobstation/RadioStation/music/personaladdons/planetarium.ogg
+
+- type: entity
+  name: Laufey - Promise
+  id: VinylDiskPromise
+  parent: BaseVinylDisk
+  components:
+  - type: Sprite
+    state: cyan-vinyl-disk
+  - type: Vinyl
+    song:
+      path: /Audio/_Goobstation/RadioStation/music/personaladdons/promise.ogg
+
+- type: entity
+  name: Paul Anka - Puppy Love
+  id: VinylDiskPuppyLove #enjoy fragment :3
+  parent: BaseVinylDisk
+  components:
+  - type: Sprite
+    state: cyan-vinyl-disk
+  - type: Vinyl
+    song:
+      path: /Audio/_Goobstation/RadioStation/music/personaladdons/pupyplove.ogg
+
+- type: entity
+  name: Laufey - Second Best
+  id: VinylDiskSecondBest #enjoy fragment :3
+  parent: BaseVinylDisk
+  components:
+  - type: Sprite
+    state: cyan-vinyl-disk
+  - type: Vinyl
+    song:
+      path: /Audio/_Goobstation/RadioStation/music/personaladdons/secondbest.ogg
+
+- type: entity
+  name: Laufey - Serendipity
+  id: VinylDiskSerendipity
+  parent: BaseVinylDisk
+  components:
+  - type: Sprite
+    state: cyan-vinyl-disk
+  - type: Vinyl
+    song:
+      path: /Audio/_Goobstation/RadioStation/music/personaladdons/serendipity.ogg
+
+- type: entity
+  name: Will Wood - That's Enough Let's Get You Home
+  id: VinylDiskTELGYH
+  parent: BaseVinylDisk
+  components:
+  - type: Sprite
+    state: cyan-vinyl-disk
+  - type: Vinyl
+    song:
+      path: /Audio/_Goobstation/RadioStation/music/personaladdons/thatsenoughletsgetyou.ogg
+
+- type: entity
+  name: Toby Fox - home
+  id: VinylDiskHome
+  parent: BaseVinylDisk
+  components:
+  - type: Sprite
+    state: cyan-vinyl-disk
+  - type: Vinyl
+    song:
+      path: /Audio/_Goobstation/RadioStation/music/personaladdons/home.ogg
+
+- type: entity
+  name: Toby Fox - Paradise, Paradise
+  id: VinylDiskParadise
+  parent: BaseVinylDisk
+  components:
+  - type: Sprite
+    state: cyan-vinyl-disk
+  - type: Vinyl
+    song:
+      path: /Audio/_Goobstation/RadioStation/music/personaladdons/paradise.ogg
+
+- type: entity
+  name: Laufey - Trouble
+  id: VinylDiskTrouble
+  parent: BaseVinylDisk
+  components:
+  - type: Sprite
+    state: cyan-vinyl-disk
+  - type: Vinyl
+    song:
+      path: /Audio/_Goobstation/RadioStation/music/personaladdons/trouble.ogg
+
+- type: entity
+  name: 2Klercs - Describe what she was like
+  id: VinylDiskDWSWL
+  parent: BaseVinylDisk
+  components:
+  - type: Sprite
+    state: cyan-vinyl-disk
+  - type: Vinyl
+    song:
+      path: /Audio/_Goobstation/RadioStation/music/personaladdons/whatshelike.ogg
+
+- type: entity
+  name: Laufey - While you Were Sleeping
+  id: VinylDiskWYWS
+  parent: BaseVinylDisk
+  components:
+  - type: Sprite
+    state: cyan-vinyl-disk
+  - type: Vinyl
+    song:
+      path: /Audio/_Goobstation/RadioStation/music/personaladdons/whileyouweresleeping.ogg
+
+- type: entity
+  name: Glass Beach - Yoshi's Island
+  id: VinylDiskYoshi
+  parent: BaseVinylDisk
+  components:
+  - type: Sprite
+    state: cyan-vinyl-disk
+  - type: Vinyl
+    song:
+      path: /Audio/_Goobstation/RadioStation/music/personaladdons/yoshisisland.ogg
+
+#new bits
+- type: entity
+  name: Lola Marsh - Something Stupid
+  id: VinylDiskSomethingStupid
+  parent: BaseVinylDisk
+  components:
+  - type: Sprite
+    state: cyan-vinyl-disk
+  - type: Vinyl
+    song:
+      path: /Audio/_Goobstation/RadioStation/music/personaladdons/somethingstupid.ogg
+
+- type: entity
+  name: Tally Hall - Banana Man
+  id: VinylDiskBananaMan
+  parent: BaseVinylDisk
+  components:
+  - type: Sprite
+    state: pink-vinyl-disk
+  - type: Vinyl
+    song:
+      path: /Audio/_Goobstation/RadioStation/music/personaladdons/bananaman.ogg
+
+- type: entity
+  name: Will Wood - I/Me/Myself
+  id: VinylDiskIMeMyself
+  parent: BaseVinylDisk
+  components:
+  - type: Sprite
+    state: cyan-vinyl-disk
+  - type: Vinyl
+    song:
+      path: /Audio/_Goobstation/RadioStation/music/personaladdons/imemyself.ogg
+
+- type: entity
+  name: Couch Dog - .mov
+  id: VinylDiskMov
+  parent: BaseVinylDisk
+  components:
+  - type: Sprite
+    state: cyan-vinyl-disk
+  - type: Vinyl
+    song:
+      path: /Audio/_Goobstation/RadioStation/music/personaladdons/mov.ogg
+
+- type: entity
+  name: Couch Dog - Whatever for now
+  id: VinylDiskWhateverFN
+  parent: BaseVinylDisk
+  components:
+  - type: Sprite
+    state: cyan-vinyl-disk
+  - type: Vinyl
+    song:
+      path: /Audio/_Goobstation/RadioStation/music/personaladdons/whateverfornow.ogg
+
+- type: entity
+  name: INOHA - The Tide
+  id: VinylDiskTheTide
+  parent: BaseVinylDisk
+  components:
+  - type: Sprite
+    state: lime-vinyl-disk
+  - type: Vinyl
+    song:
+      path: /Audio/_Goobstation/RadioStation/music/personaladdons/thetide.ogg
+
+- type: entity
+  name: INOHA - Naomi
+  id: VinylDiskNaomi
+  parent: BaseVinylDisk
+  components:
+  - type: Sprite
+    state: cyan-vinyl-disk
+  - type: Vinyl
+    song:
+      path: /Audio/_Goobstation/RadioStation/music/personaladdons/naomi.ogg
+
+- type: entity
+  name: INOHA - GESHUOU
+  id: VinylDiskGESHUOU
+  parent: BaseVinylDisk
+  components:
+  - type: Sprite
+    state: cyan-vinyl-disk
+  - type: Vinyl
+    song:
+      path: /Audio/_Goobstation/RadioStation/music/personaladdons/geshuou.ogg
+
+- type: entity
+  name: INOHA - Papaya Man
+  id: VinylDiskPapayaMan
+  parent: BaseVinylDisk
+  components:
+  - type: Sprite
+    state: cyan-vinyl-disk
+  - type: Vinyl
+    song:
+      path: /Audio/_Goobstation/RadioStation/music/personaladdons/papayaman.ogg
+
+- type: entity
+  name: INOHA - Saturday Nights
+  id: VinylDiskSaturdayNights
+  parent: BaseVinylDisk
+  components:
+  - type: Sprite
+    state: lime-vinyl-disk
+  - type: Vinyl
+    song:
+      path: /Audio/_Goobstation/RadioStation/music/personaladdons/saturdaynights.ogg
+
+- type: entity
+  name: Cavetown - Talk to Me
+  id: VinylDiskTalkToMe
+  parent: BaseVinylDisk
+  components:
+  - type: Sprite
+    state: greenish-vinyl-disk
+  - type: Vinyl
+    song:
+      path: /Audio/_Goobstation/RadioStation/music/personaladdons/talktome.ogg
+
+- type: entity
+  name: Pink Sweat$ - At My Worst
+  id: VinylDiskAtMyWorst
+  parent: BaseVinylDisk
+  components:
+  - type: Sprite
+    state: cyan-vinyl-disk
+  - type: Vinyl
+    song:
+      path: /Audio/_Goobstation/RadioStation/music/personaladdons/atmyworst.ogg
+
+- type: entity
+  name: sign crushes motorist - theres this girl
+  id: VinylDiskTheresThisGirl
+  parent: BaseVinylDisk
+  components:
+  - type: Sprite
+    state: cyan-vinyl-disk
+  - type: Vinyl
+    song:
+      path: /Audio/_Goobstation/RadioStation/music/personaladdons/theresthisgirl.ogg
+
+- type: entity
+  name: sign crushes motorist - I'm so sorry
+  id: VinylDiskSorry
+  parent: BaseVinylDisk
+  components:
+  - type: Sprite
+    state: cyan-vinyl-disk
+  - type: Vinyl
+    song:
+      path: /Audio/_Goobstation/RadioStation/music/personaladdons/imsososrry.ogg
+
+- type: entity
+  name: Caramella Girls - Caramelldansen
+  id: VinylDiskCaramelldansen
+  parent: BaseVinylDisk
+  components:
+  - type: Sprite
+    state: cyan-vinyl-disk
+  - type: Vinyl
+    song:
+      path: /Audio/_Goobstation/RadioStation/music/personaladdons/caramelldansen.ogg
+
+- type: entity
+  name: wifiskeleton & i wanna be a jack-o-lantern - Nope your too late I already died #fly high king
+  id: VinylDiskNopeLate
+  parent: BaseVinylDisk
+  components:
+  - type: Sprite
+    state: cyan-vinyl-disk
+  - type: Vinyl
+    song:
+      path: /Audio/_Goobstation/RadioStation/music/personaladdons/toolatedied.ogg
+
+- type: entity
+  name: Good Kid - Cicada
+  id: VinylDiskCicada
+  parent: BaseVinylDisk
+  components:
+  - type: Sprite
+    state: cyan-vinyl-disk
+  - type: Vinyl
+    song:
+      path: /Audio/_Goobstation/RadioStation/music/personaladdons/cicada.ogg
+
+- type: entity
+  name: Good Kid - Tea Leaves
+  id: VinylDiskTeaLeaves
+  parent: BaseVinylDisk
+  components:
+  - type: Sprite
+    state: cyan-vinyl-disk
+  - type: Vinyl
+    song:
+      path: /Audio/_Goobstation/RadioStation/music/personaladdons/tealeaves.ogg #WRONG SONG
+
+- type: entity
+  name: Good Kid - Wall
+  id: VinylDiskWall
+  parent: BaseVinylDisk
+  components:
+  - type: Sprite
+    state: cyan-vinyl-disk
+  - type: Vinyl
+    song:
+      path: /Audio/_Goobstation/RadioStation/music/personaladdons/wall.ogg
+
+- type: entity
+  name: Weezer - I just threw out the love of my dreams
+  id: VinylWeezerThrow
+  parent: BaseVinylDisk
+  components:
+  - type: Sprite
+    state: cyan-vinyl-disk
+  - type: Vinyl
+    song:
+      path: /Audio/_Goobstation/RadioStation/music/personaladdons/throwinglove.ogg
+
+
+
+
+
+
+

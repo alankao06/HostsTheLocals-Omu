@@ -961,3 +961,93 @@
   components:
   - type: NavMapBeacon
     defaultText: station-beacon-vox
+
+#Some additions for getaway
+- type: entity
+  parent: DefaultStationBeaconMedical
+  id: DefaultStationBeaconVirology
+  suffix: Virology
+  components:
+  - type: NavMapBeacon
+    defaultText: station-beacon-virology # Floofstation - Fixing localized station beacon text
+
+- type: entity
+  parent: DefaultStationBeaconAI
+  id: DefaultStationBeaconCameraServerRoom
+  suffix: Camera Servers
+  components:
+  - type: NavMapBeacon
+    defaultText: station-beacon-camera-servers # Floofstation - Fixing localized station beacon text
+
+- type: entity
+  parent: DefaultStationBeaconJustice
+  id: DefaultStationBeaconChiefJustice
+  suffix: Chief Justice
+  components:
+  - type: NavMapBeacon
+    defaultText: station-beacon-chiefjustice # Floofstation - Fixing localized station beacon text
+
+- type: entity
+  parent: DefaultStationBeaconCommand
+  id: DefaultStationBeaconConferenceRoom
+  suffix: Conference Room
+  components:
+  - type: NavMapBeacon
+    defaultText: station-beacon-conference-room # Floofstation - Fixing localized station beacon text
+
+- type: entity
+  parent: DefaultStationBeaconSecurity
+  id: DefaultStationBeaconCorpsman
+  suffix: Corpsman
+  components:
+  - type: NavMapBeacon
+    defaultText: station-beacon-corpsman # Floofstation - Fixing localized station beacon text
+
+- type: entity
+  parent: DefaultStationBeaconMedical
+  id: DefaultStationBeaconExam
+  suffix: Exam
+  components:
+  - type: NavMapBeacon
+    defaultText: station-beacon-exam # Floofstation - Fixing localized station beacon text
+
+- type: entity
+  parent: DefaultStationBeacon
+  id: DefaultStationBeaconJustice
+  suffix: Justice
+  components:
+  - type: NavMapBeacon
+    defaultText: station-beacon-justice # Floofstation - Fixing localized station beacon
+
+- type: entity
+  parent: DefaultStationBeaconSupply
+  id: DefaultStationBeaconMailroom
+  suffix: Mailroom
+  components:
+  - type: NavMapBeacon
+    defaultText: station-beacon-mailroom # Floofstation - Fixing localized station beacon text
+
+- type: entity
+  parent: DefaultStationBeacon
+  id: DefaultStationBeaconPark
+  suffix: Park
+  components:
+  - type: NavMapBeacon
+    defaultText: station-beacon-park # Floofstation - Fixing localized station beacon text
+
+- type: entity
+  parent: DefaultStationBeaconJustice
+  id: DefaultStationBeaconProsecutor
+  suffix: Prosecutor
+  components:
+  - type: NavMapBeacon
+    defaultText: station-beacon-prosecutor # Floofstation - Fixing localized station beacon text
+
+- type: entity
+  parent: DefaultStationBeaconMedical
+  id: DefaultStationBeaconPsychologist
+  suffix: Psych
+  components:
+  - type: NavMapBeacon
+    defaultText: station-beacon-psych # Floofstation - Fixing localized station beacon text
+

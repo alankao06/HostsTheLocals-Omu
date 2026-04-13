@@ -49,3 +49,58 @@
     channels:
     - RadioShow
   - type: StationRadioReceiver
+
+- type: entity
+  parent: [ BaseWallmountMachine, StationRadioReceiver]
+  id: WallStationRadio
+  name: station map
+  description: A radio affixed to the wall. Great for open expanses
+  suffix: Wall
+  components:
+    - type: WallMount
+      arc: 360
+    - type: Appearance
+    # - type: StationMap
+    - type: Sprite
+      sprite: Structures/Machines/wallmount_radio.rsi
+      layers:
+      - state: station_map0
+      - state: unshaded
+        shader: unshaded
+      - type: Machine
+
+- type: entity
+  parent: [ BaseWallmountMachine, StationRadioReceiver]
+  id: HandheldStationRadio
+  name: station map
+  description: A radio affixed to the wall. Great for open expanses
+  suffix: Wall
+  components:
+    - type: WallMount
+      arc: 360
+    - type: Appearance
+    # - type: StationMap
+    - type: Sprite
+      sprite: Structures/Machines/wallmount_radio.rsi
+      layers:
+      - state: station_map0
+      - state: unshaded
+        shader: unshaded
+      - type: Machine
+
+- type: entity
+  parent: [ StationRadioReceiver, BaseItem ]
+  id: HandheldStationRadio
+  name: station map
+  description: A radio affixed to the wall. Great for open expanses
+  suffix: Wall
+  components:
+    - type: Appearance
+    - type: Sprite
+      sprite: Structures/Machines/wallmount_radio.rsi
+    # - type: StationMap
+      inhandVisuals:
+      left:
+      - state: advanced-inhand-left
+      right:
+      - state: advanced-inhand-right

@@ -1,25 +1,5 @@
 - type: entity
   parent: BaseSignDirectional
-  id: SignDirectionalLogistics
-  name: logistics sign
-  description:  A direction sign, pointing out which way the Logistics department is.
-  components:
-  - type: Sprite
-    sprite: _DV/Structures/Wallmounts/signs.rsi
-    state: direction_logi
-
-- type: entity
-  parent: BaseSignDirectional
-  id: SignDirectionalMail
-  name: mailroom sign
-  description:  A direction sign, pointing out which way the mailroom is.
-  components:
-  - type: Sprite
-    sprite: _DV/Structures/Wallmounts/signs.rsi
-    state: direction_mail
-
-- type: entity
-  parent: BaseSignDirectional
   id: SignDirectionalJustice
   name: justice department sign
   description:  A direction sign, pointing out which way the Justice department is.
@@ -47,3 +27,12 @@
   - type: Sprite
     sprite: _DV/Structures/Wallmounts/signs.rsi
     state: direction_aicore
+
+- type: entity
+  parent: BaseSign
+  id: SignIceCream
+  name: ice cream sign
+  description: A sign indicating a ice cream parlour.
+  components:
+  - type: Sprite
+    state: icecream
