@@ -35,8 +35,9 @@
           Chef: [ 2, 3 ]
           Clown: [ 1, 1 ]
           Reporter: [ 2, 2 ]
+          RadioHost: [ 2, 2 ]
           Musician: [ 2, 2 ]
-          ServiceWorker: [ 6, 8] # high service worker count due to the extra kitchens, bars and ice cream bar
+          ServiceWorker: [ 6, 10] # high service worker count due to the extra kitchens, bars and ice cream bar
           Janitor: [ 2, 3 ]
           Mime: [ 1, 1]
           # Engineering
