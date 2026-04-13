@@ -16,7 +16,7 @@
         mapNameTemplate: '{0} Getaway Station {1}'
         nameGenerator:
           !type:NanotrasenNameGenerator
-          prefixCreator: 'FS'
+          prefixCreator: 'NT'
       - type: StationJobs
         overflowJobs:
         - Passenger
@@ -44,12 +44,7 @@
           AtmosphericTechnician: [ 2, 2 ]
           StationEngineer: [ 5, 6 ]
           TechnicalAssistant: [ 2, 3 ]
-          SeniorEngineer: [ 1, 1 ]
-          # Justice added by FloofStation
-          ChiefJustice: [ 1, 1 ] #FloofStation
-          Clerk: [ 1, 1 ] #FloofStation
           Lawyer: [ 1, 1 ] #FloofStation
-          Prosecutor: [ 1, 1 ] #FloofStation
           # Medical
           ChiefMedicalOfficer: [ 1, 1 ]
           Chemist: [ 2, 2 ]
@@ -58,7 +53,7 @@
           MedicalDoctor: [ 5, 6 ]
           MedicalIntern: [ 2, 3 ]
           SeniorPhysician: [ 1, 1 ]
-          # Science (Epistemics)
+          # Science
           ResearchDirector: [ 1, 1 ]
           Chaplain: [ 1, 1 ]
           ForensicMantis: [ 1, 1 ]
@@ -85,7 +80,4 @@
           CargoTechnician: [ 3, 4 ]
           # Silicon
           # StationAi: [ 1, 1 ] #Floofstation - uncomment when we want enabled
-          Borg: [ 2, 3 ]
-          MedicalBorg: [ 1, 2 ]
-          ServiceQuadBorg: [ 2, 3 ] #Floofstation
-          MedicalQuadBorg: [ 2, 3 ] #Floofstation
+          Borg: [ 2, 5 ]
