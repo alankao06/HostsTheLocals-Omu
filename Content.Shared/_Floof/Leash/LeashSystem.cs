@@ -345,9 +345,9 @@ public sealed class LeashSystem : EntitySystem
             return false;
 
         if (ent.Comp.Kind.HasFlag(LeashAnchorComponent.AnchorKind.Clothing)
-            && TryComp<ClothingComponent>(ent, out var clothing)
-            && clothing.InSlot != null
-            && _container.TryGetContainingContainerOld(ent, out var container))
+        && TryComp<ClothingComponent>(ent, out var clothing)
+        && clothing.InSlot != null
+        && _container.TryGetContainingContainer(Transform(ent.Owner).ParentUid, ent.Owner, out var container))
         {
             leashTarget = container.Owner;
             return true;
