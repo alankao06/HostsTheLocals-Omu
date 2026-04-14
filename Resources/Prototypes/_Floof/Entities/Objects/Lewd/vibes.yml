@@ -27,15 +27,15 @@
         Blunt: 1
   - type: StaminaDamageOnHit
     damage: 10
-  # - type: GenericVisualizer
-  #   visuals:
-  #     enum.ToggleVisuals.Toggled:
-  #       on:
-  #         True: { visible: true }
-  #         False: { visible: false }
-  #       base:
-  #         True: { visible: false }
-  #         False: { visible: true }
+#   # - type: GenericVisualizer
+#   #   visuals:
+#   #     enum.ToggleVisuals.Toggled:
+#   #       on:
+#   #         True: { visible: true }
+#   #         False: { visible: false }
+#   #       base:
+#   #         True: { visible: false }
+#   #         False: { visible: true }
 
 - type: entity
   parent: BaseVibe

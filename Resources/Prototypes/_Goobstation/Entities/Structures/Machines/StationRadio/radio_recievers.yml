@@ -71,8 +71,8 @@
 
 - type: entity
   parent: [ BaseWallmountMachine, StationRadioReceiver]
-  id: WallStationRadio
-  name: wallmount radio
+  id: HandheldStationRadio
+  name: station map
   description: A radio affixed to the wall. Great for open expanses
   suffix: Wall
   components:

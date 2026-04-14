@@ -88910,13 +88910,13 @@ entities:
     - type: Transform
       pos: -36.5,61.5
       parent: 2
-- proto: CrateLewdToys
-  entities:
-  - uid: 1943
-    components:
-    - type: Transform
-      pos: -71.5,78.5
-      parent: 2
+# - proto: CrateLewdToys
+#   entities:
+#   - uid: 1943
+#     components:
+#     - type: Transform
+#       pos: -71.5,78.5
+#       parent: 2
 - proto: CrateMaterialPlasma
   entities:
   - uid: 12586
