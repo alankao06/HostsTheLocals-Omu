@@ -26318,7 +26318,7 @@ entities:
     - type: Transform
       pos: -25.5,112.5
       parent: 2
-- proto: BibleNecronomicon
+- proto: Bible
   entities:
   - uid: 37204
     components:
@@ -264721,18 +264721,6 @@ entities:
     - type: Transform
       pos: -48.5,-12.5
       parent: 2
-- proto: WhipTealCrotch
-  entities:
-  - uid: 28120
-    components:
-    - type: MetaData
-      name: Motivation
-    - type: Transform
-      pos: -48.547894,105.5353
-      parent: 2
-    - type: Physics
-      angularDamping: 0
-      linearDamping: 0
 - proto: Windoor
   entities:
   - uid: 3247

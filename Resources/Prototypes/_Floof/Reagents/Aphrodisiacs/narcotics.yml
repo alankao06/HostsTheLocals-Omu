@@ -37,6 +37,9 @@
         - reagent-effect-aphrodisiac-strongoverdose2
         - reagent-effect-aphrodisiac-strongoverdose3
         - reagent-effect-aphrodisiac-strongoverdose4
+        - reagent-effect-aphrodisiac-strongoverdose5
+        - reagent-effect-aphrodisiac-strongoverdose6
+        - reagent-effect-aphrodisiac-strongoverdose7
         conditions:
         - !type:ReagentThreshold
           min: 10.0

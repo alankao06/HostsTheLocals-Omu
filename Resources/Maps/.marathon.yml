@@ -107637,13 +107637,13 @@ entities:
     - type: Transform
       pos: 44.5,36.5
       parent: 30
-- proto: PosterLegitNoERP
-  entities:
-  - uid: 2414
-    components:
-    - type: Transform
-      pos: -44.5,61.5
-      parent: 30
+  - proto: PosterLegitNoERP
+    entities:
+    - uid: 2414
+      components:
+      - type: Transform
+        pos: -44.5,61.5
+        parent: 30
 - proto: PosterLegitObey
   entities:
   - uid: 1649
