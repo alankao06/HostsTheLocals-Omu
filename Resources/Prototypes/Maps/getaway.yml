@@ -22,11 +22,11 @@
         - Passenger
         availableJobs:
           Passenger: [ -1, -1 ]
-          Anomaly: [ 4, 4 ] # Floofstation
+          #Anomaly: [ 4, 4 ] # Floofstation
           Captain: [ 1, 1 ]
-          #BlueshieldOfficer: [ 1, 1] #Floof - uncomment once implemented on Floof maps
-          #NanotrasenRepresentative: [ 1, 1 ] #Floof - uncomment once implemented on Floof maps
-          #AdministrativeAssistant: [ 1, 1 ] #Floof - uncomment once implemented on Floof maps
+          BlueshieldOfficer: [ 1, 1] #Floof - uncomment once implemented on Floof maps
+          NanotrasenRepresentative: [ 1, 1 ] #Floof - uncomment once implemented on Floof maps
+          AdministrativeAssistant: [ 1, 1 ] #Floof - uncomment once implemented on Floof maps
           # Service
           HeadOfPersonnel: [ 1, 1 ]
           Bartender: [ 2, 2 ]
@@ -70,9 +70,9 @@
           SecurityOfficer: [ 4, 8 ]
           SecurityCadet: [ 3, 4 ]
           Brigmedic: [ 1, 1 ]
-          Prisoner: [ 2, 3 ]
-          PrisonGuard: [ 2, 2 ]
           SeniorOfficer: [ 1, 1 ]
+          TransitPrisoner: [2, 3] # Omu - Prisoner role
+          SecuritySergeant: [ 1, 1 ] #Omu
           # Logistics
           Quartermaster: [ 1, 1 ]
           InventorySpecialist: [ 1, 1 ] #FloofStation
