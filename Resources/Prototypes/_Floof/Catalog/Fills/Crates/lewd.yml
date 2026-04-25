@@ -33,9 +33,9 @@
         - !type:NestedSelector
           tableId: LewdImpactPlay
           rolls: !type:ConstantNumberSelector { value: 4 }
-        - !type:NestedSelector
-          tableId: LewdKinkClothing
-          rolls: !type:ConstantNumberSelector { value: 4 }
+        #- !type:NestedSelector
+        #  tableId: LewdKinkClothing
+        #  rolls: !type:ConstantNumberSelector { value: 4 }
         - !type:NestedSelector
           tableId: LewdKinkTools
           rolls: !type:ConstantNumberSelector { value: 5 }
