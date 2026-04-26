@@ -2310,6 +2310,9 @@ INSERT INTO player_round (players_id, rounds_id) VALUES ({players[player]}, {id}
                 .GroupBy(v => v.PollOptionId)
                 .Select(g => new { OptionId = g.Key, Count = g.Count() })
                 .ToDictionaryAsync(x => x.OptionId, x => x.Count, cancel);
+        }
+
+        #endregion
                 
         #region Consent Settings
 
