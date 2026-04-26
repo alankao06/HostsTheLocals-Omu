@@ -100,6 +100,7 @@ using Robust.Shared.Containers;
 using Robust.Shared.Prototypes;
 using Content.Server.FloofStation;
 using Content.Shared.FloofStation; // Floofstation
+using Content.Shared._EinsteinEngines.Contests;
 
 namespace Content.Server.Resist;
 

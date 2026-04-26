@@ -3,7 +3,8 @@ using Robust.Shared.Containers;
 using Robust.Shared.Utility;
 using Robust.Shared.Audio.Systems;
 using Content.Server.Body.Components;
-using Content.Server.Consent;
+using Content.Shared.Body.Events;
+using Content.Server._Common.Consent;
 using Content.Shared.Mobs.Components;
 using Content.Shared.Examine;
 using Content.Server.Atmos.Components;
@@ -26,16 +27,17 @@ using Robust.Shared.Physics.Components;
 using Content.Shared.Nutrition.Components;
 using Content.Shared.Nutrition.EntitySystems;
 using Content.Server.Power.EntitySystems;
-using Content.Server.Silicon.Charge;
+using Content.Server._EinsteinEngines.Silicon.Charge;
 using Content.Shared.PowerCell.Components;
 using System.Linq;
-using Content.Shared.Forensics;
+using Content.Shared.Forensics.Components;
 using Content.Server.Forensics;
-using Content.Shared.Contests;
+using Content.Shared.Nutrition;
 using Content.Shared.Standing;
 using Content.Server.Power.Components;
 using Content.Shared.PowerCell;
 using Content.Server.Nutrition.EntitySystems;
+using Content.Shared._EinsteinEngines.Contests;
 
 namespace Content.Server.FloofStation;
 
@@ -161,9 +163,6 @@ public sealed class VoreSystem : EntitySystem
         if (!Resolve(uid, ref component))
             return;
 
-        if (_food.IsMouthBlocked(uid, uid))
-            return;
-
         _popups.PopupEntity(Loc.GetString("vore-attempt-devour", ("entity", uid), ("prey", target)), uid, PopupType.LargeCaution);
 
         if (!TryComp<PhysicsComponent>(uid, out var predPhysics)
@@ -177,9 +176,8 @@ public sealed class VoreSystem : EntitySystem
 
         _doAfterSystem.TryStartDoAfter(new DoAfterArgs(EntityManager, uid, length, new VoreDoAfterEvent(), uid, target: target)
         {
-            BreakOnTargetMove = true,
+            BreakOnMove = true,
             BreakOnDamage = true,
-            BreakOnUserMove = true,
             RequireCanInteract = true
         });
     }
@@ -204,7 +202,6 @@ public sealed class VoreSystem : EntitySystem
         var vored = EnsureComp<VoredComponent>(target);
         vored.Pred = uid;
         EnsureComp<PressureImmunityComponent>(target);
-        EnsureComp<RespiratorImmuneComponent>(target);
         _blindableSystem.UpdateIsBlind(target);
         if (TryComp<TemperatureComponent>(target, out var temp))
             temp.AtmosTemperatureTransferEfficiency = 0;
@@ -227,7 +224,6 @@ public sealed class VoreSystem : EntitySystem
 
         RemComp<VoredComponent>(uid);
         RemComp<PressureImmunityComponent>(uid);
-        RemComp<RespiratorImmuneComponent>(uid);
         _blindableSystem.UpdateIsBlind(uid);
         if (TryComp<TemperatureComponent>(uid, out var temp))
             temp.AtmosTemperatureTransferEfficiency = 0.1f;
@@ -352,12 +348,6 @@ public sealed class VoreSystem : EntitySystem
             {
                 if (_inventorySystem.TryGetSlotEntity(prey, slot.Name, out var item, inventoryComponent))
                 {
-                    if (TryComp<DnaComponent>(uid, out var dna))
-                    {
-                        var partComp = EnsureComp<ForensicsComponent>(item.Value);
-                        partComp.DNAs.Add(dna.DNA);
-                        Dirty(item.Value, partComp);
-                    }
                     _transform.AttachToGridOrMap(item.Value);
                 }
             }
