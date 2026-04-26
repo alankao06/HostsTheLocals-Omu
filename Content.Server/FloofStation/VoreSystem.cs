@@ -100,7 +100,6 @@ public sealed class VoreSystem : EntitySystem
             || !TryComp<VoreComponent>(args.User, out var voreuser)
             || !voreuser.CanVore
             || !TryComp<VoreComponent>(args.Target, out var voretarget)
-            || !TryComp<ConsentComponent>(args.User, out var voreconsent)
             || !voretarget.CanBeVored
             || !_consent.HasConsent(args.User, "VorePred")
             || !_consent.HasConsent(args.Target, "Vore"))
@@ -125,7 +124,6 @@ public sealed class VoreSystem : EntitySystem
             || !TryComp<VoreComponent>(args.User, out var voreuser)
             || !voreuser.CanBeVored
             || !TryComp<VoreComponent>(args.Target, out var voretarget)
-            || !TryComp<ConsentComponent>(args.User, out var voreconsent)
             || !voretarget.CanVore
             || !_consent.HasConsent(args.Target, "VorePred")
             || !_consent.HasConsent(args.User, "Vore"))
