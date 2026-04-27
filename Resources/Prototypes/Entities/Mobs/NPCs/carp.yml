@@ -209,7 +209,9 @@
       interactFailureString: petting-failure-carp
       interactFailureSound:
         path: /Audio/Effects/bite.ogg
-    - type: Body # Shitmed: Special carp organs
+    - type: Vore # Floofstation - Vore
+      canVore: true
+    - type: Body # Shitmed - Adds carp organs.
       prototype: Carp
     - type: NightVision # Goobstation - Nigthvision
       color: "#808080"

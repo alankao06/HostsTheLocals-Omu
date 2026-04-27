@@ -2058,6 +2058,7 @@
   components:
   - type: VentCrawler # goobstation - Ventcrawl
     enterDelay: 0.5
+  - type: Vore
   - type: Body
     prototype: Mouse
   - type: GhostRole

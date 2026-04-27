@@ -1,0 +1,12 @@
+- type: consentToggle
+  id: Vore
+  category: Vore
+
+- type: consentToggle
+  id: VorePred
+  category: Vore
+
+- type: consentToggle
+  id: Digestion
+  category: Vore
+  priority: 1
