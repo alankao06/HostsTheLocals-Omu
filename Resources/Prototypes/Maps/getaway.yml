@@ -37,7 +37,7 @@
           Reporter: [ 2, 2 ]
           RadioHost: [ 2, 2 ]
           Musician: [ 2, 2 ]
-          ServiceWorker: [ 6, 10] # high service worker count due to the extra kitchens, bars and ice cream bar
+          ServiceWorker: [ 6, 10 ] # high service worker count due to the extra kitchens, bars and ice cream bar
           Janitor: [ 2, 3 ]
           Mime: [ 1, 1]
           # Engineering
@@ -49,20 +49,20 @@
           # Medical
           ChiefMedicalOfficer: [ 1, 1 ]
           Chemist: [ 2, 2 ]
-          Paramedic: [2, 2 ]
+          Paramedic: [ 2, 2 ]
           Psychologist: [ 1, 1 ]
           MedicalDoctor: [ 5, 6 ]
           MedicalIntern: [ 2, 3 ]
-          SeniorPhysician: [ 1, 1 ]
+          #SeniorPhysician: [ 1, 1 ]
           # Science
           ResearchDirector: [ 1, 1 ]
           Chaplain: [ 1, 1 ]
-          ForensicMantis: [ 1, 1 ]
+          #ForensicMantis: [ 1, 1 ]
           Scientist: [ 3, 4 ]
           ResearchAssistant: [ 2, 3 ]
           Roboticist: [ 2, 2 ]
           Librarian: [ 1, 1 ]
-          SeniorResearcher: [ 1, 1 ]
+          #SeniorResearcher: [ 1, 1 ]
           # Security
           HeadOfSecurity: [ 1, 1 ]
           Warden: [ 1, 1 ]
@@ -71,12 +71,14 @@
           SecurityCadet: [ 3, 4 ]
           Brigmedic: [ 1, 1 ]
           SeniorOfficer: [ 1, 1 ]
-          TransitPrisoner: [2, 3] # Omu - Prisoner role
+          TransitPrisoner: [ 2, 3 ] # Omu - Prisoner role
           SecuritySergeant: [ 1, 1 ] #Omu
           # Logistics
           Quartermaster: [ 1, 1 ]
-          InventorySpecialist: [ 1, 1 ] #FloofStation
-          MailCarrier: [ 2, 2 ]
+          #InventorySpecialist: [ 1, 1 ] #FloofStation
+          #MailCarrier: [ 2, 2 ]
+          #ShaftMiner: [ 3, 3 ] #HTL - Lavaland Disabled
+          Courier: [ 2, 2 ] # Omu - Courier role
           SalvageSpecialist: [ 4, 5 ]
           CargoTechnician: [ 3, 4 ]
           # Silicon
