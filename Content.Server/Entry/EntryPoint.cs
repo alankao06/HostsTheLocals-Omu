@@ -141,6 +141,7 @@ using Content.Server.Administration.Logs;
 using Content.Server.Administration.Managers;
 using Content.Server.Afk;
 using Content.Server.Chat.Managers;
+using Content.Server._Common.Consent;
 using Content.Server.Connection;
 using Content.Server.Database;
 using Content.Server.Discord.DiscordLink;
@@ -186,6 +187,7 @@ namespace Content.Server.Entry
         private IWatchlistWebhookManager _watchlistWebhookManager = default!;
         private IConnectionManager? _connectionManager;
         private LastRolledAntagManager? _lastAntagManager; // Goobstation
+        private IServerConsentManager _consentManager = default!;
 
         /// <inheritdoc />
         public override void Init()
@@ -234,6 +236,7 @@ namespace Content.Server.Entry
                 _sysMan = IoCManager.Resolve<IEntitySystemManager>();
                 _dbManager = IoCManager.Resolve<IServerDbManager>();
                 _watchlistWebhookManager = IoCManager.Resolve<IWatchlistWebhookManager>();
+                _consentManager = IoCManager.Resolve<IServerConsentManager>();
 
                 logManager.GetSawmill("Storage").Level = LogLevel.Info;
                 logManager.GetSawmill("db.ef").Level = LogLevel.Info;
@@ -297,6 +300,7 @@ namespace Content.Server.Entry
                 IoCManager.Resolve<IConnectionManager>().PostInit();
                 IoCManager.Resolve<MultiServerKickManager>().Initialize();
                 IoCManager.Resolve<CVarControlManager>().Initialize();
+                _consentManager.Initialize();
             }
         }
 

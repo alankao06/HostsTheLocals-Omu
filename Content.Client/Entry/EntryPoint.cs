@@ -119,10 +119,12 @@
 //
 // SPDX-License-Identifier: AGPL-3.0-or-later
 
+using Content.Client._Common.Consent;
 using Content.Client.Administration.Managers;
 using Content.Client.Changelog;
 using Content.Client.Chat.Managers;
 using Content.Client.DebugMon;
+using Content.Client._Common.Consent;
 using Content.Client.Eui;
 using Content.Client.Fullscreen;
 using Content.Client.GameTicking.Managers;
@@ -180,6 +182,7 @@ namespace Content.Client.Entry
         [Dependency] private readonly ViewportManager _viewportManager = default!;
         [Dependency] private readonly IUserInterfaceManager _userInterfaceManager = default!;
         [Dependency] private readonly IInputManager _inputManager = default!;
+        [Dependency] private readonly IClientConsentManager _clientConsentManager = default!;
         [Dependency] private readonly IOverlayManager _overlayManager = default!;
         [Dependency] private readonly IChatManager _chatManager = default!;
         [Dependency] private readonly IClientPreferencesManager _clientPreferencesManager = default!;
@@ -288,7 +291,7 @@ namespace Content.Client.Entry
             ContentContexts.SetupContexts(_inputManager.Contexts);
 
             _parallaxManager.LoadDefaultParallax();
-
+            _clientConsentManager.Initialize();
             _overlayManager.AddOverlay(new SingularityOverlay());
             _overlayManager.AddOverlay(new RadiationPulseOverlay());
             _overlayManager.AddOverlay(new SpriteToLayerBullshitOverlay()); // WD EDIT

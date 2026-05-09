@@ -496,6 +496,9 @@
   id: BaseBorgChassis
   components:
   - type: IonStormTarget
+  - type: Vore # Floofstation - Vore
+    canVore: true
+    canBeVored: false
 
 - type: entity
   abstract: true
