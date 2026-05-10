@@ -1,21 +1,3 @@
-# SPDX-FileCopyrightText: 2021 Swept <sweptwastaken@protonmail.com>
-# SPDX-FileCopyrightText: 2021 mirrorcult <lunarautomaton6@gmail.com>
-# SPDX-FileCopyrightText: 2022 Electro <no>
-# SPDX-FileCopyrightText: 2022 Jacob Tong <10494922+ShadowCommander@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 Peptide90 <78795277+Peptide90@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 Profane McBane <profanedbane+github@gmail.com>
-# SPDX-FileCopyrightText: 2022 keronshb <54602815+keronshb@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 metalgearsloth <comedian_vs_clown@hotmail.com>
-# SPDX-FileCopyrightText: 2023 lzk <124214523+lzk228@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Flareguy <78941145+Flareguy@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 MACMAN2003 <macman2003c@gmail.com>
-# SPDX-FileCopyrightText: 2024 TakoDragon <69509841+BackeTako@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 lapatison <100279397+lapatison@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-#
-# SPDX-License-Identifier: AGPL-3.0-or-later
 #Atmospherics
 - type: entity
   parent: AirlockAssembly
@@ -23,8 +5,8 @@
   suffix: Atmospherics
   components:
   - type: Sprite
-    sprite: Structures/Doors/Airlocks/Standard/atmospherics.rsi
-    state: "assembly"
+    sprite: _Shiptest/Structures/Doors/Airlocks/standard.rsi
+    state: "atmos_open"
 
 - type: entity
   parent: AirlockAssembly
@@ -32,8 +14,8 @@
   suffix: Atmospherics, Glass
   components:
   - type: Sprite
-    sprite: Structures/Doors/Airlocks/Glass/atmospherics.rsi
-    state: "assembly"
+    sprite: _Shiptest/Structures/Doors/Airlocks/glass.rsi
+    state: "atmos_open"
 
 #Cargo
 - type: entity
@@ -42,8 +24,8 @@
   suffix: Cargo
   components:
   - type: Sprite
-    sprite: Structures/Doors/Airlocks/Standard/cargo.rsi
-    state: "assembly"
+    sprite: _Shiptest/Structures/Doors/Airlocks/standard.rsi
+    state: "mine_open"
 
 - type: entity
   parent: AirlockAssembly
@@ -51,8 +33,8 @@
   suffix: Cargo, Glass
   components:
   - type: Sprite
-    sprite: Structures/Doors/Airlocks/Glass/cargo.rsi
-    state: "assembly"
+    sprite: _Shiptest/Structures/Doors/Airlocks/glass.rsi
+    state: "mine_open"
 
 #Clockwork
 - type: entity
@@ -86,8 +68,8 @@
   suffix: Command
   components:
   - type: Sprite
-    sprite: Structures/Doors/Airlocks/Standard/command.rsi
-    state: "assembly"
+    sprite: _Shiptest/Structures/Doors/Airlocks/standard.rsi
+    state: "command_open"
 
 - type: entity
   parent: AirlockAssembly
@@ -95,8 +77,8 @@
   suffix: Command, Glass
   components:
   - type: Sprite
-    sprite: Structures/Doors/Airlocks/Glass/command.rsi
-    state: "assembly"
+    sprite: _Shiptest/Structures/Doors/Airlocks/glass.rsi
+    state: "command_open"
 
 #Engineering
 - type: entity
@@ -105,8 +87,8 @@
   suffix: Engineering
   components:
   - type: Sprite
-    sprite: Structures/Doors/Airlocks/Standard/engineering.rsi
-    state: "assembly"
+    sprite: _Shiptest/Structures/Doors/Airlocks/standard.rsi
+    state: "engi_open"
 
 - type: entity
   parent: AirlockAssembly
@@ -114,8 +96,8 @@
   suffix: Engineering, Glass
   components:
   - type: Sprite
-    sprite: Structures/Doors/Airlocks/Glass/engineering.rsi
-    state: "assembly"
+    sprite: _Shiptest/Structures/Doors/Airlocks/glass.rsi
+    state: "engi_open"
 
 #External
 - type: entity
@@ -124,8 +106,8 @@
   suffix: External
   components:
   - type: Sprite
-    sprite: Structures/Doors/Airlocks/Standard/external.rsi
-    state: "assembly"
+    sprite: _Shiptest/Structures/Doors/Airlocks/external.rsi
+    state: "construction"
 
 - type: entity
   parent: AirlockAssembly
@@ -133,8 +115,8 @@
   suffix: External, Glass
   components:
   - type: Sprite
-    sprite: Structures/Doors/Airlocks/Glass/external.rsi
-    state: "assembly"
+    sprite: _Shiptest/Structures/Doors/Airlocks/externalglass.rsi
+    state: "construction"
 
 #Public (Glass Airlock)
 - type: entity
@@ -143,8 +125,8 @@
   suffix: Glass
   components:
   - type: Sprite
-    sprite: Structures/Doors/Airlocks/Glass/glass.rsi
-    state: "assembly"
+    sprite: _Shiptest/Structures/Doors/Airlocks/glass.rsi
+    state: "pub_open"
 
 #Freezer
 - type: entity
@@ -153,8 +135,8 @@
   suffix: Freezer
   components:
   - type: Sprite
-    sprite: Structures/Doors/Airlocks/Standard/freezer.rsi
-    state: "assembly"
+    sprite: _Shiptest/Structures/Doors/Airlocks/standard.rsi
+    state: "freezer_open"
 
 #Hydroponics
 - type: entity
@@ -163,8 +145,8 @@
   suffix: Hydroponics
   components:
   - type: Sprite
-    sprite: Structures/Doors/Airlocks/Standard/hydroponics.rsi
-    state: "assembly"
+    sprite: _Shiptest/Structures/Doors/Airlocks/standard.rsi
+    state: "pub_open"
 
 - type: entity
   parent: AirlockAssembly
@@ -172,8 +154,8 @@
   suffix: Hydroponics, Glass
   components:
   - type: Sprite
-    sprite: Structures/Doors/Airlocks/Glass/hydroponics.rsi
-    state: "assembly"
+    sprite: _Shiptest/Structures/Doors/Airlocks/glass.rsi
+    state: "pub_open"
 
 #Maintenance
 - type: entity
@@ -182,8 +164,8 @@
   suffix: Maintenance
   components:
   - type: Sprite
-    sprite: Structures/Doors/Airlocks/Standard/maint.rsi
-    state: "assembly"
+    sprite: _Shiptest/Structures/Doors/Airlocks/standard.rsi
+    state: "maint_open"
 
 - type: entity
   parent: AirlockAssembly
@@ -191,8 +173,8 @@
   suffix: Maintenance, Glass
   components:
   - type: Sprite
-    sprite: Structures/Doors/Airlocks/Glass/maint.rsi
-    state: "assembly"
+    sprite: _Shiptest/Structures/Doors/Airlocks/glass.rsi
+    state: "maint_open"
 
 #Medical
 - type: entity
@@ -201,8 +183,8 @@
   suffix: Medical
   components:
   - type: Sprite
-    sprite: Structures/Doors/Airlocks/Standard/medical.rsi
-    state: "assembly"
+    sprite: _Shiptest/Structures/Doors/Airlocks/standard.rsi
+    state: "med_open"
 
 - type: entity
   parent: AirlockAssembly
@@ -210,8 +192,8 @@
   suffix: Medical, Glass
   components:
   - type: Sprite
-    sprite: Structures/Doors/Airlocks/Glass/medical.rsi
-    state: "assembly"
+    sprite: _Shiptest/Structures/Doors/Airlocks/glass.rsi
+    state: "med_open"
 
 #Salvage
 - type: entity
@@ -220,8 +202,8 @@
   suffix: Salvage
   components:
   - type: Sprite
-    sprite: Structures/Doors/Airlocks/Standard/salvage.rsi
-    state: "assembly"
+    sprite: _Shiptest/Structures/Doors/Airlocks/standard.rsi
+    state: "mine_open"
 
 - type: entity
   parent: AirlockAssembly
@@ -229,8 +211,8 @@
   suffix: Salvage, Glass
   components:
   - type: Sprite
-    sprite: Structures/Doors/Airlocks/Glass/salvage.rsi
-    state: "assembly"
+    sprite: _Shiptest/Structures/Doors/Airlocks/glass.rsi
+    state: "mine_open"
 
 #Science
 - type: entity
@@ -239,8 +221,8 @@
   suffix: Science
   components:
   - type: Sprite
-    sprite: Structures/Doors/Airlocks/Standard/science.rsi
-    state: "assembly"
+    sprite: _Shiptest/Structures/Doors/Airlocks/standard.rsi
+    state: "rnd_open"
 
 - type: entity
   parent: AirlockAssembly
@@ -248,8 +230,8 @@
   suffix: Science, Glass
   components:
   - type: Sprite
-    sprite: Structures/Doors/Airlocks/Glass/science.rsi
-    state: "assembly"
+    sprite: _Shiptest/Structures/Doors/Airlocks/glass.rsi
+    state: "rnd_open"
 
 #Security
 - type: entity
@@ -258,8 +240,8 @@
   suffix: Security
   components:
   - type: Sprite
-    sprite: Structures/Doors/Airlocks/Standard/security.rsi
-    state: "assembly"
+    sprite: _Shiptest/Structures/Doors/Airlocks/standard.rsi
+    state: "sec_open"
 
 - type: entity
   parent: AirlockAssembly
@@ -267,8 +249,8 @@
   suffix: Security, Glass
   components:
   - type: Sprite
-    sprite: Structures/Doors/Airlocks/Glass/security.rsi
-    state: "assembly"
+    sprite: _Shiptest/Structures/Doors/Airlocks/glass.rsi
+    state: "sec_open"
 
 #Shuttle
 - type: entity
@@ -277,8 +259,8 @@
   suffix: Shuttle
   components:
   - type: Sprite
-    sprite: Structures/Doors/Airlocks/Standard/shuttle.rsi
-    state: "assembly"
+    sprite: _Shiptest/Structures/Doors/Airlocks/shuttle.rsi
+    state: "construction"
 
 - type: entity
   parent: AirlockAssembly
@@ -286,8 +268,8 @@
   suffix: Shuttle, Glass
   components:
   - type: Sprite
-    sprite: Structures/Doors/Airlocks/Glass/shuttle.rsi
-    state: "assembly"
+    sprite: _Shiptest/Structures/Doors/Airlocks/shuttleglass.rsi
+    state: "construction"
 
 #Virology
 - type: entity
@@ -296,8 +278,8 @@
   suffix: Virology
   components:
   - type: Sprite
-    sprite: Structures/Doors/Airlocks/Standard/virology.rsi
-    state: "assembly"
+    sprite: _Shiptest/Structures/Doors/Airlocks/standard.rsi
+    state: "viro_open"
 
 - type: entity
   parent: AirlockAssembly
@@ -305,8 +287,8 @@
   suffix: Virology, Glass
   components:
   - type: Sprite
-    sprite: Structures/Doors/Airlocks/Glass/virology.rsi
-    state: "assembly"
+    sprite: _Shiptest/Structures/Doors/Airlocks/glass.rsi
+    state: "viro_open"
 
 #CentralCommand
 - type: entity
@@ -315,8 +297,8 @@
   suffix: CentralCommand
   components:
   - type: Sprite
-    sprite: Structures/Doors/Airlocks/Standard/centcomm.rsi
-    state: "assembly"
+    sprite: _Shiptest/Structures/Doors/Airlocks/standard.rsi
+    state: "solgov_open"
 
 - type: entity
   parent: AirlockAssembly
@@ -324,8 +306,8 @@
   suffix: CentralCommand, Glass
   components:
   - type: Sprite
-    sprite: Structures/Doors/Airlocks/Glass/centcomm.rsi
-    state: "assembly"
+    sprite: _Shiptest/Structures/Doors/Airlocks/glass.rsi
+    state: "solgov_open"
 
 #Mining
 - type: entity
@@ -334,8 +316,8 @@
   suffix: Mining
   components:
   - type: Sprite
-    sprite: Structures/Doors/Airlocks/Standard/mining.rsi
-    state: "assembly"
+    sprite: _Shiptest/Structures/Doors/Airlocks/standard.rsi
+    state: "mine_open"
 
 - type: entity
   parent: AirlockAssembly
@@ -343,8 +325,8 @@
   suffix: Mining, Glass
   components:
   - type: Sprite
-    sprite: Structures/Doors/Airlocks/Glass/mining.rsi
-    state: "assembly"
+    sprite: _Shiptest/Structures/Doors/Airlocks/glass.rsi
+    state: "mine_open"
 
 #Syndicate
 - type: entity
@@ -353,8 +335,8 @@
   suffix: Syndicate
   components:
   - type: Sprite
-    sprite: Structures/Doors/Airlocks/Standard/syndicate.rsi
-    state: "assembly"
+    sprite: _Shiptest/Structures/Doors/Airlocks/standard.rsi
+    state: "maintext_open"
 
 - type: entity
   parent: AirlockAssembly
@@ -362,8 +344,8 @@
   suffix: Syndicate, Glass
   components:
   - type: Sprite
-    sprite: Structures/Doors/Airlocks/Glass/syndicate.rsi
-    state: "assembly"
+    sprite: _Shiptest/Structures/Doors/Airlocks/glass.rsi
+    state: "maintext_open"
 
 #ShuttleSyndicate
 - type: entity
@@ -372,8 +354,8 @@
   suffix: ShuttleSyndicate
   components:
   - type: Sprite
-    sprite: Structures/Doors/Airlocks/Standard/shuttle_syndicate.rsi
-    state: "assembly"
+    sprite: _Shiptest/Structures/Doors/Airlocks/shuttle.rsi
+    state: "construction"
 
 - type: entity
   parent: AirlockAssembly
@@ -381,8 +363,8 @@
   suffix: ShuttleSyndicate, Glass
   components:
   - type: Sprite
-    sprite: Structures/Doors/Airlocks/Glass/shuttle_syndicate.rsi
-    state: "assembly"
+    sprite: _Shiptest/Structures/Doors/Airlocks/shuttleglass.rsi
+    state: "construction"
 
 #High Security
 - type: entity
@@ -391,5 +373,5 @@
   suffix: HighSec
   components:
   - type: Sprite
-    sprite: Structures/Doors/Airlocks/highsec/highsec.rsi
+    sprite: _Shiptest/Structures/Doors/Airlocks/highsec.rsi
     state: "assembly"

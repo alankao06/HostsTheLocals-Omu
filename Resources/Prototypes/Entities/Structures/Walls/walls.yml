@@ -343,9 +343,9 @@
   name: bananium wall
   components:
   - type: Sprite
-    sprite: Structures/Walls/clown.rsi
+    sprite: _Shiptest/Structures/Walls/clown.rsi
   - type: Icon
-    sprite: Structures/Walls/clown.rsi
+    sprite: _Shiptest/Structures/Walls/clown.rsi
   - type: Construction
     graph: Girder
     node: bananiumWall
@@ -488,9 +488,9 @@
   name: diamond wall
   components:
   - type: Sprite
-    sprite: Structures/Walls/diamond.rsi
+    sprite: _Shiptest/Structures/Walls/diamond.rsi
   - type: Icon
-    sprite: Structures/Walls/diamond.rsi
+    sprite: _Shiptest/Structures/Walls/diamond.rsi
   - type: RCDDeconstructable
     cost: 6
     delay: 8
@@ -522,9 +522,9 @@
   name: gold wall
   components:
   - type: Sprite
-    sprite: Structures/Walls/gold.rsi
+    sprite: _Shiptest/Structures/Walls/gold.rsi
   - type: Icon
-    sprite: Structures/Walls/gold.rsi
+    sprite: _Shiptest/Structures/Walls/gold.rsi
   - type: Construction
     graph: Girder
     node: goldWall
@@ -609,9 +609,9 @@
   name: plasma wall
   components:
   - type: Sprite
-    sprite: Structures/Walls/plasma.rsi
+    sprite: _Shiptest/Structures/Walls/plasma.rsi
   - type: Icon
-    sprite: Structures/Walls/plasma.rsi
+    sprite: _Shiptest/Structures/Walls/plasma.rsi
   - type: Construction
     graph: Girder
     node: plasmaWall
@@ -655,9 +655,9 @@
   name: plastic wall
   components:
   - type: Sprite
-    sprite: Structures/Walls/plastic.rsi
+    sprite: _Shiptest/Structures/Walls/plastic.rsi
   - type: Icon
-    sprite: Structures/Walls/plastic.rsi
+    sprite: _Shiptest/Structures/Walls/plastic.rsi
   - type: Construction
     graph: Girder
     node: plasticWall
@@ -700,9 +700,9 @@
   suffix: indestructible
   components:
     - type: Sprite
-      sprite: Structures/Walls/plastitanium.rsi
+      sprite: _Shiptest/Structures/Walls/plastitanium.rsi
     - type: Icon
-      sprite: Structures/Walls/plastitanium.rsi
+      sprite: _Shiptest/Structures/Walls/plastitanium.rsi
     - type: IconSmooth
       key: walls
       base: plastitanium
@@ -761,10 +761,10 @@
   components:
   - type: Sprite
     drawdepth: Walls
-    sprite: Structures/Walls/plastitanium_diagonal.rsi
+    sprite: _Shiptest/Structures/Walls/plastitanium_diagonal.rsi
     state: state0
   - type: Icon
-    sprite: Structures/Walls/plastitanium_diagonal.rsi
+    sprite: _Shiptest/Structures/Walls/plastitanium_diagonal.rsi
     state: state0
   - type: Damageable
     damageContainer: StructuralInorganic
@@ -780,10 +780,10 @@
   components:
   - type: Sprite
     drawdepth: Walls
-    sprite: Structures/Walls/plastitanium_diagonal.rsi
+    sprite: _Shiptest/Structures/Walls/plastitanium_diagonal.rsi
     state: state0
   - type: Icon
-    sprite: Structures/Walls/plastitanium_diagonal.rsi
+    sprite: _Shiptest/Structures/Walls/plastitanium_diagonal.rsi
     state: state0
   - type: Destructible
     thresholds:
@@ -808,9 +808,9 @@
   name: reinforced wall
   components:
   - type: Sprite
-    sprite: Structures/Walls/solid.rsi
+    sprite: _Shiptest/Structures/Walls/solid.rsi
   - type: Icon
-    sprite: Structures/Walls/solid.rsi
+    sprite: _Shiptest/Structures/Walls/solid.rsi
     state: rgeneric
   - type: Construction
     graph: Girder
@@ -896,9 +896,9 @@
   suffix: rusted
   components:
   - type: Sprite
-    sprite: Structures/Walls/solid_rust.rsi
+    sprite: _Shiptest/Structures/Walls/solid_rust.rsi
   - type: Icon
-    sprite: Structures/Walls/solid_rust.rsi
+    sprite: _Shiptest/Structures/Walls/solid_rust.rsi
     state: rgeneric
   - type: Construction
     graph: Girder
@@ -943,14 +943,14 @@
     - Diagonal
   - type: Sprite
     drawdepth: Walls
-    sprite: Structures/Walls/reinforced_diagonal.rsi
+    sprite: _Shiptest/Structures/Walls/reinforced_diagonal.rsi
     state: state0
   - type: IconSmooth
     mode: Diagonal
     key: walls
     base: state
   - type: Icon
-    sprite: Structures/Walls/reinforced_diagonal.rsi
+    sprite: _Shiptest/Structures/Walls/reinforced_diagonal.rsi
     state: state0
   - type: Damageable
     damageContainer: StructuralInorganic
@@ -1025,9 +1025,9 @@
   name: sandstone wall
   components:
   - type: Sprite
-    sprite: Structures/Walls/sandstone.rsi
+    sprite: _Shiptest/Structures/Walls/sandstone.rsi
   - type: Icon
-    sprite: Structures/Walls/sandstone.rsi
+    sprite: _Shiptest/Structures/Walls/sandstone.rsi
   - type: RCDDeconstructable
     cost: 6
     delay: 8
@@ -1055,9 +1055,9 @@
   name: silver wall
   components:
   - type: Sprite
-    sprite: Structures/Walls/silver.rsi
+    sprite: _Shiptest/Structures/Walls/silver.rsi
   - type: Icon
-    sprite: Structures/Walls/silver.rsi
+    sprite: _Shiptest/Structures/Walls/silver.rsi
   - type: Construction
     graph: Girder
     node: silverWall
@@ -1101,10 +1101,10 @@
   components:
   - type: Sprite
     drawdepth: Walls
-    sprite: Structures/Walls/shuttle_diagonal.rsi
+    sprite: _Shiptest/Structures/Walls/shuttle_diagonal.rsi
     state: state0
   - type: Icon
-    sprite: Structures/Walls/shuttle_diagonal.rsi
+    sprite: _Shiptest/Structures/Walls/shuttle_diagonal.rsi
     state: state0
   - type: Reflect
     reflectProb: 0.3 # Omu, lower reflect chance
@@ -1203,9 +1203,9 @@
   - type: RadiationBlocker
     resistance: 5
   - type: Sprite
-    sprite: Structures/Walls/shuttle.rsi
+    sprite: _Shiptest/Structures/Walls/shuttle.rsi
   - type: Icon
-    sprite: Structures/Walls/shuttle.rsi
+    sprite: _Shiptest/Structures/Walls/shuttle.rsi
     state: full
   - type: Construction
     graph: Girder
@@ -1252,13 +1252,13 @@
   name: solid wall
   components:
   - type: Sprite
-    sprite: Structures/Walls/solid.rsi
+    sprite: _Shiptest/Structures/Walls/solid.rsi
   - type: WallReplacementMarker
   - type: Construction
     graph: Girder
     node: wall
   - type: Icon
-    sprite: Structures/Walls/solid.rsi
+    sprite: _Shiptest/Structures/Walls/solid.rsi
   - type: RCDDeconstructable
     cost: 6
     delay: 8
@@ -1307,10 +1307,10 @@
   components:
   - type: Sprite
     drawdepth: Walls
-    sprite: Structures/Walls/solid_diagonal.rsi
+    sprite: _Shiptest/Structures/Walls/solid_diagonal.rsi
     state: state0
   - type: Icon
-    sprite: Structures/Walls/solid_diagonal.rsi
+    sprite: _Shiptest/Structures/Walls/solid_diagonal.rsi
     state: state0
   - type: Destructible
     thresholds:
@@ -1341,9 +1341,9 @@
   suffix: rusted
   components:
   - type: Sprite
-    sprite: Structures/Walls/solid_rust.rsi
+    sprite: _Shiptest/Structures/Walls/solid_rust.rsi
   - type: Icon
-    sprite: Structures/Walls/solid_rust.rsi
+    sprite: _Shiptest/Structures/Walls/solid_rust.rsi
     state: full
   - type: Construction
     graph: Girder
@@ -1410,9 +1410,9 @@
   name: uranium wall
   components:
   - type: Sprite
-    sprite: Structures/Walls/uranium.rsi
+    sprite: _Shiptest/Structures/Walls/uranium.rsi
   - type: Icon
-    sprite: Structures/Walls/uranium.rsi
+    sprite: _Shiptest/Structures/Walls/uranium.rsi
   - type: Construction
     graph: Girder
     node: uraniumWall
@@ -1464,9 +1464,9 @@
   description: The traditional greytide defense.
   components:
   - type: Sprite
-    sprite: Structures/Walls/wood.rsi
+    sprite: _Shiptest/Structures/Walls/wood.rsi
   - type: Icon
-    sprite: Structures/Walls/wood.rsi
+    sprite: _Shiptest/Structures/Walls/wood.rsi
   - type: Construction
     graph: Barricade
     node: woodWall
@@ -1556,9 +1556,9 @@
   name: stone wall
   components:
   - type: Sprite
-    sprite: Structures/Walls/necropolis.rsi
+    sprite: _Shiptest/Structures/Walls/necropolis.rsi
   - type: Icon
-    sprite: Structures/Walls/necropolis.rsi
+    sprite: _Shiptest/Structures/Walls/necropolis.rsi
   - type: Destructible
     thresholds:
     - trigger:
@@ -1581,9 +1581,9 @@
   name: mining wall
   components:
   - type: Sprite
-    sprite: Structures/Walls/mining.rsi
+    sprite: _Shiptest/Structures/Walls/mining.rsi
   - type: Icon
-    sprite: Structures/Walls/mining.rsi
+    sprite: _Shiptest/Structures/Walls/mining.rsi
   - type: Destructible
     thresholds:
     - trigger:
@@ -1612,10 +1612,10 @@
   components:
   - type: Sprite
     drawdepth: Walls
-    sprite: Structures/Walls/mining_diagonal.rsi
+    sprite: _Shiptest/Structures/Walls/mining_diagonal.rsi
     state: state0
   - type: Icon
-    sprite: Structures/Walls/mining_diagonal.rsi
+    sprite: _Shiptest/Structures/Walls/mining_diagonal.rsi
     state: state0
   - type: Damageable
     damageContainer: StructuralInorganic

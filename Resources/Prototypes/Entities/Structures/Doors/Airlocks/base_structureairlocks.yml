@@ -105,15 +105,14 @@
           "/Audio/Weapons/smash.ogg"
   - type: InteractionOutline
   - type: Sprite
-    sprite: Structures/Doors/Airlocks/Standard/basic.rsi
-    snapCardinals: true
+    sprite: _Shiptest/Structures/Doors/Airlocks/standard.rsi
+    snapCardinals: false
     layers:
     - state: closed
       map: ["enum.DoorVisualLayers.Base"]
     - state: closed_unlit
       shader: unshaded
       map: ["enum.DoorVisualLayers.BaseUnlit"]
-      visible: false
     - state: welded
       map: ["enum.WeldableLayers.BaseWelded"]
     - state: bolted_unlit
@@ -122,7 +121,7 @@
     - state: emergency_unlit
       map: ["enum.DoorVisualLayers.BaseEmergencyAccess"]
       shader: unshaded
-    - state: panel_open
+    - state: panel_closing
       map: ["enum.WiresVisualLayers.MaintenancePanel"]
     - state: electrified_ai
       sprite: Interface/Misc/ai_hud.rsi
@@ -136,6 +135,9 @@
       map: ["enum.ElectrifiedLayers.Sparks"]
   - type: AnimationPlayer
   - type: Physics
+  - type: IconSmooth
+    key: walls
+    mode: NoSprite
   - type: Fixtures
     fixtures:
       fix1:
@@ -301,8 +303,11 @@
   - type: Occluder
     enabled: false
   - type: Sprite
-    sprite: Structures/Doors/Airlocks/Glass/glass.rsi
+    sprite: _Shiptest/Structures/Doors/Airlocks/glass.rsi
   - type: AnimationPlayer
+  - type: IconSmooth
+    key: walls
+    mode: NoSprite
   - type: Fixtures
     fixtures:
       fix1:

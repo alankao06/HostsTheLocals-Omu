@@ -118,9 +118,9 @@
   components:
   - type: Sprite
     drawdepth: WallTops
-    sprite: Structures/Windows/plastitanium_window.rsi
+    sprite: _Shiptest/Structures/Windows/plastitanium_window.rsi
   - type: Icon
-    sprite: Structures/Windows/plastitanium_window.rsi
+    sprite: _Shiptest/Structures/Windows/plastitanium_window.rsi
     state: full
   - type: IconSmooth
 #    key: windows # Omu

@@ -61,7 +61,8 @@
   components:
   - type: StationAiWhitelist
   - type: Sprite
-    sprite: Structures/Doors/Shutters/shutters.rsi
+    snapCardinals: false
+    sprite: _Shiptest/Structures/Doors/Shutters/shutters.rsi
     drawdepth: BlastDoors
     layers:
     - state: closed

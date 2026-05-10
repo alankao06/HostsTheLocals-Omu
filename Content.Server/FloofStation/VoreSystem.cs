@@ -269,7 +269,7 @@ public sealed class VoreSystem : EntitySystem
         _popups.PopupEntity(Loc.GetString("vore-devoured", ("entity", uid), ("prey", target)), target, target, PopupType.SmallCaution);
         _popups.PopupEntity(Loc.GetString("vore-devoured", ("entity", uid), ("prey", target)), target, uid, PopupType.SmallCaution);
 
-        _adminLog.Add(LogType.Action, LogImpact.High, $"{ToPrettyString(uid)} vored {ToPrettyString(target)}");
+        // _adminLog.Add(LogType.Action, LogImpact.High, $"{ToPrettyString(uid)} vored {ToPrettyString(target)}");
     }
 
     private void OnRelease(EntityUid uid, VoredComponent component, EntGotRemovedFromContainerMessage args)
@@ -297,7 +297,7 @@ public sealed class VoreSystem : EntitySystem
         _popups.PopupEntity(Loc.GetString("vore-released", ("entity", uid), ("pred", args.Container.Owner)), uid, args.Container.Owner, PopupType.Medium);
         _popups.PopupEntity(Loc.GetString("vore-released", ("entity", uid), ("pred", args.Container.Owner)), uid, uid, PopupType.Medium);
 
-        _adminLog.Add(LogType.Action, LogImpact.Medium, $"{ToPrettyString(uid)} got released from {ToPrettyString(args.Container.Owner)} belly");
+        // _adminLog.Add(LogType.Action, LogImpact.Medium, $"{ToPrettyString(uid)} got released from {ToPrettyString(args.Container.Owner)} belly");
     }
 
     public void Digest(EntityUid uid, VoredComponent? component = null)
@@ -305,7 +305,7 @@ public sealed class VoreSystem : EntitySystem
         if (!Resolve(uid, ref component))
             return;
 
-        _adminLog.Add(LogType.Action, LogImpact.High, $"{ToPrettyString(component.Pred)} started digesting {ToPrettyString(uid)}");
+        // _adminLog.Add(LogType.Action, LogImpact.High, $"{ToPrettyString(component.Pred)} started digesting {ToPrettyString(uid)}");
 
         component.Digesting = true;
 
@@ -343,7 +343,7 @@ public sealed class VoreSystem : EntitySystem
         if (!Resolve(uid, ref component))
             return;
 
-        _adminLog.Add(LogType.Action, LogImpact.High, $"{ToPrettyString(component.Pred)} stopped digesting {ToPrettyString(uid)}");
+        // _adminLog.Add(LogType.Action, LogImpact.High, $"{ToPrettyString(component.Pred)} stopped digesting {ToPrettyString(uid)}");
 
         component.Digesting = false;
 
@@ -378,7 +378,7 @@ public sealed class VoreSystem : EntitySystem
 
     private void FullyDigest(EntityUid uid, EntityUid prey)
     {
-        _adminLog.Add(LogType.Action, LogImpact.Extreme, $"{ToPrettyString(uid)} fully digested {ToPrettyString(prey)}");
+        // _adminLog.Add(LogType.Action, LogImpact.Extreme, $"{ToPrettyString(uid)} fully digested {ToPrettyString(prey)}");
 
         var digestedmessage = _random.Next(1, 8);
 

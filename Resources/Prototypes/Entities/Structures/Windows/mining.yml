@@ -18,9 +18,9 @@
   components:
   - type: Sprite
     drawdepth: WallTops
-    sprite: Structures/Windows/mining.rsi
+    sprite: _Shiptest/Structures/Windows/mining.rsi
   - type: Icon
-    sprite: Structures/Windows/mining.rsi
+    sprite: _Shiptest/Structures/Windows/mining.rsi
   - type: Repairable
     fuelCost: 15
     doAfterDelay: 3
@@ -53,7 +53,7 @@
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
   - type: IconSmooth
-    base: mwindow
+    base: ptwindow
   - type: Appearance
   - type: DamageVisuals
     thresholds: [5, 10, 20]

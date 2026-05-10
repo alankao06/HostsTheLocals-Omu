@@ -262,8 +262,6 @@
   speciesRestriction: [ Arachnid ]
   sprites:
   - sprite: _Impstation/Mobs/Customization/Arachnid/tail.rsi
-    state: abdomenbasic1
-  - sprite: _Impstation/Mobs/Customization/Arachnid/tail.rsi
     state: abdomenbasic2
 
 - type: marking

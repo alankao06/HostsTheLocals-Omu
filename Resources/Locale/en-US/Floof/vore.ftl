@@ -13,7 +13,7 @@ vore-digest-start-chat = [color=red]{CAPITALIZE($entity)}'s stomach groans and s
 vore-digest-stop = {CAPITALIZE($entity)}'s stomach seems to calm down...
 vore-released = {CAPITALIZE($entity)} is expelled from {CAPITALIZE($pred)}'s body.
 
-vore-digested-owner-1 = [color=red]You feel {CAPITALIZE($entity)} body succumb to your digestive system, which breaks it apart into soft slurry.[/color]
+vore-digested-owner-1 = [color=red]You feel {CAPITALIZE($entity)}'s body succumb to your digestive system, which breaks it apart into soft slurry.[/color]
 vore-digested-owner-2 = [color=red]You hear a lewd glorp as your stomach's muscles grind {CAPITALIZE($entity)} into a warm pulp.[/color]
 vore-digested-owner-3 = [color=red]Your stomach lets out a rumble as it melts {CAPITALIZE($entity)} into sludge.[/color]
 vore-digested-owner-4 = [color=red]You feel a soft gurgle as {CAPITALIZE($entity)}'s body loses form in your stomach. They're nothing but a soft mass of churning slop now.[/color]

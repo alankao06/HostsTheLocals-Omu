@@ -68,8 +68,8 @@
       points: 1
       required: false
     Tail:
-      points: 1
-      required: true
+      points: 2
+      required: false
       defaultMarkings: [ ArachnidAppendagesDefault ]
     HeadTop:
       points: 6

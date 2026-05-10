@@ -69,9 +69,9 @@
       - Window
   - type: Sprite
     drawdepth: WallTops
-    sprite: Structures/Windows/window.rsi
+    sprite: _Shiptest/Structures/Windows/window.rsi
   - type: Icon
-    sprite: Structures/Windows/window.rsi
+    sprite: _Shiptest/Structures/Windows/window.rsi
     state: full
   - type: Physics
     bodyType: Static
@@ -150,9 +150,9 @@
   components:
   - type: Sprite
     drawdepth: WallTops
-    sprite: Structures/Windows/tinted_window.rsi
+    sprite: _Shiptest/Structures/Windows/tinted_window.rsi
   - type: Icon
-    sprite: Structures/Windows/tinted_window.rsi
+    sprite: _Shiptest/Structures/Windows/tinted_window.rsi
   - type: IconSmooth
     base: twindow
   - type: Construction
