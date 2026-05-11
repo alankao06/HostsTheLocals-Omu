@@ -23,6 +23,12 @@
       "name": "station_map_frame0"
     },
     {
+      "name": "icon"
+    },
+    {
+      "name": "unlit"
+    },
+    {
       "name": "unshaded",
       "delays": [
         [

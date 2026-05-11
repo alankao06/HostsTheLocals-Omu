@@ -246,7 +246,7 @@
   abstract: true
   components:
   - type: Sprite
-    sprite: Structures/Storage/Closets/closet.rsi
+    sprite: Structures/Storage/Closets/closetgrey2.rsi
     layers:
     - state: closet
       map: ["enum.StorageVisualLayers.Base"]
@@ -274,7 +274,7 @@
   - type: Sprite
     noRot: true
     netsync: false
-    sprite: Structures/Storage/Closets/closet.rsi
+    sprite: Structures/Storage/Closets/closetgrey2.rsi
     layers:
     - state: closet
       map: ["enum.StorageVisualLayers.Base"]

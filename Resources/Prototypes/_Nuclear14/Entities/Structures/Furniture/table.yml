@@ -491,6 +491,3 @@
     sprite: _Nuclear14/Structures/Furniture/Tables/barcounter.rsi
   - type: Icon
     sprite: _Nuclear14/Structures/Furniture/Tables/barcounter.rsi
-  - type: Construction
-    graph: BarCounter
-    node: barcounter

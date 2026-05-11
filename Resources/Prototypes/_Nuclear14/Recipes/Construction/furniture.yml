@@ -380,25 +380,6 @@
 # Tables
 
 - type: construction
-  name: bar counter
-  id: N14TableCounterBar
-  graph: BarCounter #floof station
-  startNode: start
-  targetNode: barcounter #floof station
-  category: construction-category-furniture
-  description: An alcohol stained bartop.
-  objectType: Structure
-  placementMode: SnapgridCenter
-  canBuildInImpassable: false
-  hide: false
-  canRotate: true
-  icon:
-    sprite: _Nuclear14/Structures/Furniture/Tables/barcounter.rsi
-    state: full
-  conditions:
-    - !type:TileNotBlocked
-
-- type: construction
   name: metal table
   id: N14TableMetalGrate
   graph: N14TableMetalGrateRecipes
