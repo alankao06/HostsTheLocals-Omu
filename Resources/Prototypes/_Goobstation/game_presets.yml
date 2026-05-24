@@ -93,6 +93,19 @@
     - BasicRoundstartVariation
 
 - type: gamePreset
+  id: CalmOpsHidden
+  alias:
+    - calmopshidden
+  name: secretplus-mid-title
+  description: secretplus-mid-description
+  showInVote: false
+  rules:
+    - Calmops
+    - BasicStationEventScheduler
+    - MeteorSwarmScheduler
+    - BasicRoundstartVariation
+
+- type: gamePreset
   id: RevTraitor
   alias:
     - revtraitor
